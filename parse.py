@@ -4,7 +4,8 @@ from urllib.parse import urljoin
 
 
 BASE_URL = 'https://home-club.com.ua'
-URL = urljoin(BASE_URL, 'ua/sku-90507603?gclid=CjwKCAjwzY2bBhB6EiwAPpUpZhSieA2DRWXhLcbNCpIvJcC9dLHc534Djx5FKNpL9iXaLZlSQaNyLBoCEwYQAvD_BwE')
+URL = urljoin(BASE_URL, 
+             'ua/sku-90507603?gclid=CjwKCAjwzY2bBhB6EiwAPpUpZhSieA2DRWXhLcbNCpIvJcC9dLHc534Djx5FKNpL9iXaLZlSQaNyLBoCEwYQAvD_BwE')
 
 
 def main():
