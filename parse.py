@@ -12,10 +12,10 @@ def main():
     soup = BeautifulSoup(page, 'html.parser')
 
     elementsList = soup.select('.additional-details > div > span.value')
-    vendorCode, deliveryAvailability, deliveryAvailabilityPoland, deliveryDate, availabilityLviv = [el.text for el in elementsList]
+    vendorCode, deliveryAvailability, deliveryAvailabilityPoland, deliveryDate, availabilityLviv = [el.text.strip() for el in elementsList]
     
     with open('data.txt' , 'w', encoding='utf-8') as file:
-        file.write(f'{vendorCode}\n{deliveryAvailability.strip()}\n{deliveryAvailabilityPoland.strip()}\n{availabilityLviv.strip()}')
+        file.write(f'{vendorCode}\n{deliveryAvailability}\n{deliveryAvailabilityPoland}\n{availabilityLviv}')
         
 
 
